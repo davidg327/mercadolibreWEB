@@ -1,0 +1,7 @@
+@use '../abstracts/mixins' as *;
+
+.home {
+  @include center;
+  @include center_page;
+
+}
