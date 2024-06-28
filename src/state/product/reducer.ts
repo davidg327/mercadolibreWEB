@@ -5,6 +5,7 @@ const initialState = {
     searchProductsSuccess: false,
     searchProductsError: '',
     searchProducts: [],
+    categories: [],
 };
 
 export const productSlice = createSlice({
@@ -17,9 +18,11 @@ export const productSlice = createSlice({
             state.searchProducts = [];
         },
         searchProductsSuccess(state, action) {
+            console.log(action.payload, 'reducer');
             state.searchProductsRequesting = false;
             state.searchProductsSuccess = true;
             state.searchProducts = action.payload;
+            state.categories = action.payload.categories;
         },
         searchProductsError(state, action){
             state.searchProductsRequesting = false;

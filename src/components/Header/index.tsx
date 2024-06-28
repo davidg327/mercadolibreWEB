@@ -5,11 +5,7 @@ import {useAppDispatch, useAppSelector} from "../../hooks/hooks";
 import {searchProducts} from "../../state/product/reducer";
 import {Link, useLocation, useNavigate} from 'react-router-dom';
 
-interface IHeader {
-
-}
-
-const Header = ({}: IHeader) => {
+const Header = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const dispatch = useAppDispatch();
