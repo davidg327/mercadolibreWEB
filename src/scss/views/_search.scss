@@ -6,21 +6,6 @@
   @include center-page;
   @include center-page-information;
 
-  &__categories-row {
-    display: flex;
-  }
-
-  &__category {
-    margin-top: 20px;
-    display: flex;
-    margin-right: 10px;
-
-    .category-separator {
-      margin-right: 10px;
-    }
-
-  }
-
   &__container-info {
     display: flex;
     flex-direction: column;
@@ -34,7 +19,7 @@
 
   &__card-product {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 70%;
+    width: 98%;
     background-color: $white;
     margin-top: 20px;
     display: flex;

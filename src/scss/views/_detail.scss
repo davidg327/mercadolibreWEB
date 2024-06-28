@@ -1,0 +1,80 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.detail {
+  background-color: $background-color;
+  @include center-page;
+  @include center-page-information;
+
+  &__container-info {
+    background-color: $white;
+    margin-top: 20px;
+    height: 75vh;
+    overflow: auto;
+    padding: 20px 30px 20px 30px;
+  }
+
+  &__card-info-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__detail-image {
+    width: 600px;
+    height: 400px;
+  }
+
+  &__info_product {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    .title-product {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .currency {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+
+    .button-buy {
+      background-color: $blue;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding: 10px;
+      margin-top: 20px;
+      color: $white;
+      border-radius: 5px;
+    }
+  }
+
+  &__state_product {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+
+    .separator {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  &__info-description {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444444;
+    margin-bottom: 10px;
+  }
+
+  &__text-description {
+    color: #808080;
+    font-size: 16px;
+  }
+}
+

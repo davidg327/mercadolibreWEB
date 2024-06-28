@@ -10,7 +10,9 @@
 /*components*/
 @use './scss/components/header';
 @use './scss/components/load';
+@use './scss/components/categories';
 
 /*views*/
 @use './scss/views/home';
 @use './scss/views/search';
+@use './scss/views/detail';

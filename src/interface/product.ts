@@ -5,6 +5,7 @@ export interface IProduct {
     price: IPrice;
     condition: string;
     free_shipping: boolean;
+    description?: string;
 }
 
 interface IPrice {

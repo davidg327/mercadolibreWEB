@@ -4,5 +4,5 @@ export const formatCurrency = (amount: number, currency: string, decimals: numbe
         currency: currency,
         minimumFractionDigits: decimals,
         maximumFractionDigits: decimals,
-    }).format(amount);
+    }).format(amount)
 };

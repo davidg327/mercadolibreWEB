@@ -1,0 +1,14 @@
+.categories-row {
+  display: flex;
+}
+
+.category {
+  margin-top: 20px;
+  display: flex;
+  margin-right: 10px;
+
+  .category-separator {
+    margin-right: 10px;
+  }
+
+}
