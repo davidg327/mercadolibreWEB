@@ -4,6 +4,7 @@ import {useAppDispatch, useAppSelector} from "../../hooks/hooks";
 import {formatCurrency} from "../../functions/functions";
 import {getProduct} from "../../state/product/reducer";
 import {useLocation, useParams} from "react-router-dom";
+import HelmetComponent from "../../components/Helmet";
 
 const Detail = () => {
     const { id } = useParams();
@@ -22,6 +23,7 @@ const Detail = () => {
 
     return (
         <div className={'detail'} >
+            <HelmetComponent title={'Detail'} />
             {getProductRequesting && (
                 <div className={"loader-container"}>
                     <div className="loader" />

@@ -1,11 +1,13 @@
 import React from 'react';
 import {useAppSelector} from "../../hooks/hooks";
+import HelmetComponent from "../../components/Helmet";
 
 const Home = () => {
     const {searchProductsRequesting} =
         useAppSelector(state => state.product);
     return (
         <div className={"home"}>
+            <HelmetComponent title={'Home'} />
             {searchProductsRequesting && (
                 <div className={"loader-container"}>
                     <div className="loader"></div>

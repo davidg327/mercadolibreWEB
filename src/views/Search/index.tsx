@@ -5,12 +5,13 @@ import {formatCurrency} from "../../functions/functions";
 import {useNavigate} from "react-router-dom";
 import {getProduct} from "../../state/product/reducer";
 import Categories from "../../components/Categories";
+import HelmetComponent from "../../components/Helmet";
 
 const Search = () => {
     const navigate = useNavigate();
     const dispatch = useAppDispatch();
 
-    const {searchProductsRequesting, searchProductsSuccess, categories, searchProducts} =
+    const {searchProductsRequesting, searchProductsSuccess, searchProducts} =
         useAppSelector(state => state.product);
 
     const redirectDetail = (id: string) =>  {
@@ -20,6 +21,7 @@ const Search = () => {
 
     return (
         <div className={"search"}>
+            <HelmetComponent title={'Search'} />
             {searchProductsRequesting && (
                 <div className={"loader-container"}>
                     <div className="loader" />
